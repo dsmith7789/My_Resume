@@ -1,62 +1,40 @@
-<link rel="stylesheet" href="style.css">
-
-# **Dante Smith**
-_Site Reliability Engineer · Full-Stack Developer_
-
-📍 Denver, CO  
-✉️ [you@example.com](mailto:you@example.com) · [github.com/dantesmith](https://github.com/dantesmith)  
-🔗 [linkedin.com/in/dantesmith](https://linkedin.com/in/dantesmith) · [portfolio_new](https://yourportfolio.com)
+# Dante Smith
+<span class="icon"><i class="fas fa-phone"></i></span> (123) 456-7890 |
+<span class="icon"><i class="fas fa-envelope"></i></span> you@example.com |
+<span class="icon"><i class="fab fa-github"></i></span> github.com/dantesmith |
+<span class="icon"><i class="fab fa-linkedin"></i></span> linkedin.com/in/dantesmith
 
 ---
 
-## 🧭 Summary
-Experienced engineer specializing in infrastructure automation and distributed systems. Skilled in AWS, Kubernetes, and full-stack development. Passionate about improving developer experience and reliability through scalable, observable systems.
+## Summary
+Engineer specializing in infrastructure automation and distributed systems. Skilled in AWS, Kubernetes, and React. Passionate about reliability, scalability, and developer productivity.
 
 ---
 
-## 💼 Experience
+## Experience
 
-### **Senior Site Reliability Engineer** — Acme Corp _(2022 – Present)_
-- Led migration to Kubernetes, improving uptime from 99.5 → 99.95 %.  
-- Automated observability with Prometheus + Grafana, defining SLOs across services.  
-- Built reusable Terraform modules adopted by 10+ teams.
+**Senior Site Reliability Engineer — Acme Corp | 2022–Present**  
+- Led migration to Kubernetes (uptime +0.45%)  
+- Built observability stack (Prometheus, Grafana)  
+- Authored Terraform modules used by 10+ teams
 
-### **Software Engineer** — Beta Systems _(2018 – 2021)_
-- Designed event-driven microservices with Kafka for high-volume notifications.  
-- Collaborated with frontend team to implement full-stack delivery of new features.  
-- Mentored junior engineers and maintained CI pipelines (GitLab CI, Docker).
-
-### **Backend Engineer** — StartUp Co _(2015 – 2018)_
-- Created REST APIs in Node.js and Spring Boot.  
-- Improved test coverage and reduced production incidents by 30 %.
+**Software Engineer — Beta Systems | 2018–2021**  
+- Designed Kafka-based event pipelines  
+- Automated CI/CD pipelines  
+- Mentored junior engineers
 
 ---
 
-## 🧰 Skills
-**Languages:** Python, Go, JavaScript, TypeScript  
-**Cloud:** AWS (EC2, RDS, S3), GCP, Terraform  
-**DevOps:** Docker, Kubernetes, Helm, GitLab CI/CD  
-**Monitoring:** Prometheus, Grafana, ELK Stack  
-**Frontend:** React, Redux, HTML / CSS  
+## Education
+B.S. Computer Science — University of Illinois, 2015
 
 ---
 
-## 🎓 Education
-**B.S. Computer Science** — University of Illinois (2015)
+## Skills
+AWS · Kubernetes · Terraform · Python · Go · React · Docker · GitLab CI
 
 ---
 
-## 🧩 Projects
-- **LiveMetrics:** Real-time metrics pipeline using Go + Kafka (50k msg/sec).  
-- **DeployBot:** Internal deployment dashboard reducing failed deploys by 60 %.  
-
----
-
-## 🏅 Certifications
-- AWS Certified Solutions Architect — Associate  
-- Certified Kubernetes Administrator (CKA)
-
----
-
-## 🌱 Interests
-Cycling · Woodworking · Indie Game Jams
+## Projects
+**LiveMetrics** — real-time metrics ingestion with Go + Kafka  
+**DeployBot** — CI/CD preflight tool reducing failed deploys by 60%
