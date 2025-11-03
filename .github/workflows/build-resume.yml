@@ -1,0 +1,47 @@
+name: Build Resume
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:   # allows manual trigger
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2️⃣ Install Pandoc + WeasyPrint
+      - name: Install Pandoc and WeasyPrint
+        run: sudo apt-get update && sudo apt-get install -y pandoc weasyprint
+
+      # 3️⃣ Generate PDF and DOCX
+      - name: Generate PDF and DOCX
+        run: |
+          # Define paths (adjust if your files are in a folder)
+          RESUME_MD="resume.md"
+          STYLE_CSS="style.css"
+          PDF_OUTPUT="resume-2025.pdf"
+          DOCX_OUTPUT="resume-2025.docx"
+          HTML_TEMP="resume.html"
+
+          # Generate HTML intermediate for CSS styling
+          pandoc "$RESUME_MD" -s -c "$STYLE_CSS" -o "$HTML_TEMP"
+
+          # Generate PDF via WeasyPrint from HTML
+          weasyprint "$HTML_TEMP" "$PDF_OUTPUT"
+
+          # Generate DOCX (ATS-friendly)
+          pandoc "$RESUME_MD" -s -o "$DOCX_OUTPUT"
+
+      # 4️⃣ Upload artifacts
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-files
+          path: |
+            resume-2025.pdf
+            resume-2025.docx
